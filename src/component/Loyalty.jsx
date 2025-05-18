@@ -1,5 +1,4 @@
 import React from 'react';
-
 import TitleIcon from '../assets/images/icons/titleIcon.png';
 import CheckIcon from '../assets/images/icons/check.png';
 import Medal1 from '../assets/images/icons/rating1.png';
@@ -22,43 +21,43 @@ const LoyaltyProgram = () => {
             </div>
 
             {/* Tiers */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
+            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-8 w-full max-w-7xl">
                 {/* Silver Tier */}
-                <div className="flex flex-col justify-between w-full min-h-[440px] bg-white border-[3px] border-[#5E5EEE] rounded-[40px] p-8 shadow">
+                <div className="flex flex-col justify-between w-full min-h-[380px] bg-white border-[3px] border-[#5E5EEE] rounded-[40px] p-6 shadow col-span-2">
                     <div className="flex flex-col gap-6">
                         <div className="flex justify-between items-center">
-                            <div className="flex items-center gap-2 bg-[#4242FF] text-white px-4 py-1 rounded-full">
+                            <div className="flex items-center gap-2 bg-[#4242FF] text-white px-5 py-2 rounded-full">
                                 <span className="text-sm font-semibold">Current Tier</span>
                             </div>
-                            <img src={Medal1} alt="medal" className="h-8" />
+                            <img src={Medal1} alt="medal" className="h-10" />
                         </div>
                         <hr className="border-gray-300" />
-                        <span className="text-lg font-bold">Silver</span>
+                        <span className="text-xl font-bold">Silver</span>
                         <div className="flex gap-2 items-center">
-                            <span className="text-green-600 font-semibold text-2xl">2%</span>
+                            <span className="text-green-600 font-semibold text-3xl">2%</span>
                             <p className="text-lg text-gray-500">Cashback</p>
                         </div>
-                        <ul className="space-y-3">
-                            <li className="flex items-center gap-2">
-                                <img src={CheckIcon} className="h-5" />
-                                <span className="font-semibold text-black text-base">Free Shipping over $500</span>
+                        <ul className="space-y-4">
+                            <li className="flex items-center gap-3">
+                                <img src={CheckIcon} className="h-6" />
+                                <span className="font-semibold text-black text-lg">Free Shipping over $500</span>
                             </li>
-                            <li className="flex items-center gap-2">
-                                <img src={CheckIcon} className="h-5" />
-                                <span className="font-semibold text-black text-base">Standard Support</span>
+                            <li className="flex items-center gap-3">
+                                <img src={CheckIcon} className="h-6" />
+                                <span className="font-semibold text-black text-lg">Standard Support</span>
                             </li>
                         </ul>
                     </div>
-                    <p className="text-gray-500 font-medium mt-4">Your active tier benefits</p>
+                    <p className="text-gray-500 font-medium mt-6">Your active tier benefits</p>
                 </div>
 
                 {/* Gold Tier */}
-                <div className="flex flex-col justify-between w-full min-h-[440px] bg-white rounded-[40px] p-8 shadow border-[3px] border-transparent hover:border-[#5E5EEE] hover:shadow-lg transition-all duration-300 ease-in-out">
+                <div className="flex flex-col justify-between w-full min-h-[360px] bg-white rounded-[40px] p-4 shadow border-[3px] border-transparent hover:border-[#5E5EEE] hover:shadow-lg transition-all duration-300 ease-in-out col-span-2">
                     <div>
                         <div className="flex justify-between items-center relative">
                             <span className="text-lg font-bold">Gold</span>
                             <img src={Medal2} alt="medal" className="h-8" />
-                            <div className="absolute top-[-45px] right-0 bg-[#4242FF] text-white text-sm font-semibold px-4 py-1 rounded-full z-10">
+                            <div className="absolute top-[-35px] right-0 bg-[#4242FF] text-white text-sm font-semibold px-4 py-1 rounded-full z-10">
                                 Most Popular
                             </div>
                         </div>
@@ -85,12 +84,12 @@ const LoyaltyProgram = () => {
                 </div>
 
                 {/* Platinum Tier */}
-                <div className="flex flex-col justify-between w-full min-h-[380px] bg-white rounded-[40px] p-6 shadow border-[3px] border-transparent hover:border-[#5E5EEE] hover:shadow-lg transition-all duration-300 ease-in-out">
+                <div className="flex flex-col justify-between w-full min-h-[360px] bg-white rounded-[40px] p-4 shadow border-[3px] border-transparent hover:border-[#5E5EEE] hover:shadow-lg transition-all duration-300 ease-in-out col-span-2">
                     <div>
                         <div className="flex justify-between items-center relative">
                             <span className="text-lg font-bold">Platinum</span>
                             <img src={Medal3} alt="medal" className="h-8" />
-                            <div className="absolute top-[-45px] right-0 bg-[#4242FF] text-white text-sm font-semibold px-4 py-1 rounded-full z-10">
+                            <div className="absolute top-[-35px] right-0 bg-[#4242FF] text-white text-sm font-semibold px-4 py-1 rounded-full z-10">
                                 Top Tier
                             </div>
                         </div>

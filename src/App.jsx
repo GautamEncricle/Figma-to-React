@@ -5,6 +5,7 @@ import ShopByCase from "./component/ShopByCase"
 import Journey from "./component/Journey"
 import LoyaltyProgram from "./component/Loyalty"
 import SecureSection from "./component/SecureSection"
+import Testimonials from "./component/Testimonials"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Journey />
       <LoyaltyProgram />
       <SecureSection />
+      <Testimonials />
     </>
   )
 }
