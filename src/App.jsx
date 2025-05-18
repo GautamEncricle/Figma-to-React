@@ -5,7 +5,11 @@ import ShopByCase from "./component/ShopByCase"
 import Journey from "./component/Journey"
 import LoyaltyProgram from "./component/Loyalty"
 import SecureSection from "./component/SecureSection"
+import AboutUs from "./component/About"
+import DentalTrust from "./component/DentalTrust"
 import Testimonials from "./component/Testimonials"
+import ChatBox from "./component/ChatBox"
+import Footer from "./component/Footer"
 
 function App() {
 
@@ -18,7 +22,11 @@ function App() {
       <Journey />
       <LoyaltyProgram />
       <SecureSection />
+      <DentalTrust />
+      <AboutUs />
       <Testimonials />
+      <ChatBox />
+      <Footer />
     </>
   )
 }
