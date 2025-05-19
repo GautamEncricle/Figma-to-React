@@ -3,6 +3,7 @@ import About1 from '../assets/images/about1.png';
 import About2 from '../assets/images/about2.png';
 import TitleIcon from '../assets/images/icons/titleIcon.png';
 import ReadIcon from '../assets/images/icons/read.png';
+import "../assets/css/about.css"
 
 const AboutUs = () => {
     return (
@@ -10,23 +11,28 @@ const AboutUs = () => {
             <div className="flex flex-col lg:flex-row justify-center items-center gap-10 max-w-[1527px] mx-auto">
                 {/* Left Image */}
                 <div className="relative w-full max-w-[600px] sm:max-w-[682px] aspect-[682/609]">
-                    {/* Main Image */}
-                    <img
-                        src={About1}
-                        alt="Main About"
-                        className="absolute top-1/2 left-0 -translate-y-1/2 w-full h-full object-cover rounded-[30px] sm:rounded-[50px]"
-                    />
-
-                    {/* Floating Overlay Image */}
-                    <div className="absolute bottom-0 right-[-10px]  sm:right-[-10px] w-[140px] h-[140px] sm:w-[200px] sm:h-[200px] z-20 border-t-8 border-r-8 border-[#F8F8FF] bg-white rounded-[30px] rounded-bl-[2px] rounded-tr-[2px] group p-2 sm:p-3 overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105">
+                    <div
+                        className="shine-wrapper relative w-full h-full max-w-[600px] sm:max-w-[682px] aspect-[682/609]"
+                        onMouseEnter={(e) => e.currentTarget.classList.remove("mouseout")}
+                        onMouseLeave={(e) => e.currentTarget.classList.add("mouseout")}
+                    >
                         <img
-                            src={About2}
-                            alt="Overlay"
-                            className="w-full h-full object-cover rounded-[30px]"
+                            src={About1}
+                            alt="Main About"
+                            className="w-full h-full object-cover rounded-[30px] sm:rounded-[50px]"
                         />
-                        <div className="absolute inset-0 bg-cyan-300 opacity-0 group-hover:opacity-90 transition duration-300 rounded-[30px] flex flex-col items-center justify-center p-3 sm:p-4 text-white text-center overflow-hidden">
-                            <span className="text-3xl sm:text-5xl font-bold text-black truncate">98%</span>
-                            <p className="text-lg sm:text-2xl text-black font-semibold truncate">Success</p>
+
+                        {/* Floating Overlay Image */}
+                        <div className="absolute bottom-0 right-[-10px]  sm:right-[-10px] w-[140px] h-[140px] sm:w-[200px] sm:h-[200px] z-20 border-t-8 border-r-8 border-[#F8F8FF] bg-white rounded-[30px] rounded-bl-[2px] rounded-tr-[2px] group p-2 sm:p-3 overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105">
+                            <img
+                                src={About2}
+                                alt="Overlay"
+                                className="w-full h-full object-cover rounded-[30px]"
+                            />
+                            <div className="absolute inset-0 bg-cyan-300 opacity-0 group-hover:opacity-90 transition duration-300 rounded-[30px] flex flex-col items-center justify-center p-3 sm:p-4 text-white text-center overflow-hidden">
+                                <span className="text-3xl sm:text-5xl font-bold text-black truncate">98%</span>
+                                <p className="text-lg sm:text-2xl text-black font-semibold truncate">Success</p>
+                            </div>
                         </div>
                     </div>
                 </div>
