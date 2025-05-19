@@ -61,7 +61,7 @@ const Header = () => {
                         />
                     </div>
                     {/* Floating Rating */}
-                    <div className="absolute bottom-20 left-4 top-1 md:top-auto max-h-[120px] md:left-0 bg-white text-black w-[250px] px-4 py-4 rounded-xl shadow-md space-y-2 z-10 hover:bg-green-100">
+                    <div className="absolute bottom-20 left-4 top-1 md:top-auto max-h-[120px] md:left-0 bg-white text-black w-[250px] px-4 py-4 rounded-xl shadow-md space-y-2 z-5 hover:bg-green-100">
                         <img src={heroRating} alt="rating" className="w-10" />
                         <p className="font-semibold text-lg">Best Service & 5 Star</p>
                         <p className="text-sm text-gray-700">Advanced technology for seamless integration.</p>
@@ -71,7 +71,7 @@ const Header = () => {
             </div>
 
             {/* Contact Info Floating */}
-            <div className="absolute left-1/2 bottom-[-120px] md:bottom-[-50px] transform -translate-x-1/2 w-[90vw] md:w-[80vw] lg:w-[70vw] bg-white text-black rounded-2xl shadow-xl px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-6 z-50">
+            <div className="absolute left-1/2 bottom-[-120px] md:bottom-[-50px] transform -translate-x-1/2 w-[90vw] md:w-[80vw] lg:w-[70vw] bg-white text-black rounded-2xl shadow-xl px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-6 z-10">
                 {/* Contact */}
                 <div className="flex items-center gap-4">
                     <img src={contactIcon} alt="contact" className="w-8 h-8" />

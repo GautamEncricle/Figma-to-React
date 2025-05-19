@@ -61,11 +61,11 @@ const Testimonials = () => {
                     {[1, 2, 3, 4, 5].map((_, index) => (
                         <div
                             key={index}
-                            className="relative w-[350px] bg-white rounded-[40px] p-8 shadow border-[#5E5EEE] border-[3px] flex-shrink-0"
+                            className="relative w-[280px] sm:w-[300px] md:w-[350px] bg-white rounded-[40px] p-6 md:p-8 shadow border-[#5E5EEE] border-[3px] flex-shrink-0"
                         >
                             {/* Badge */}
-                            <div className="absolute top-[-19px] left-[250px] bg-[#4242FF] text-white text-sm font-semibold px-4 py-1 rounded-full whitespace-nowrap z-10">
-                                <img src={BadgeIcon} alt="icon" className="w-8 h-8" />
+                            <div className="absolute top-[-19px] right-4 sm:right-6 z-10 bg-[#4242FF] text-white text-sm font-semibold px-4 py-1 rounded-full">
+                                <img src={BadgeIcon} alt="badge" className="w-8 h-8" />
                             </div>
 
                             {/* Star Image */}
