@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import TitleIcon from '../assets/images/icons/titleIcon.png';
-import PrevIcon from '../assets/images/icons/next.png'; 
-import NextIcon from '../assets/images/icons/arrow.png'; 
+import PrevIcon from '../assets/images/icons/next.png';
+import NextIcon from '../assets/images/icons/arrow.png';
 import BadgeIcon from '../assets/images/icons/h1.png';
 import StarImg from '../assets/images/cover/starts.png';
 import ProfileImg from '../assets/images/icons/profile.png';
@@ -11,7 +11,8 @@ const Testimonials = () => {
 
     const scroll = (direction) => {
         if (!scrollRef.current) return;
-        const offset = 380;
+        const isMobile = window.innerWidth <= 768;
+        const offset = isMobile ? 300 : 1120;
         scrollRef.current.scrollBy({
             left: direction === 'left' ? -offset : offset,
             behavior: 'smooth',
@@ -53,12 +54,12 @@ const Testimonials = () => {
             <div className="max-w-7xl mx-auto border-b border-[#C6C6C6] mb-12"></div>
 
             {/* Carousel */}
-            <div className="max-w-[1400px] mx-auto relative">
+            <div className="max-w-[1120px] mx-auto relative">
                 <div
                     ref={scrollRef}
                     className="flex overflow-x-auto gap-6 px-4 py-6 scrollbar-hide scroll-smooth"
                 >
-                    {[1, 2, 3, 4, 5].map((_, index) => (
+                    {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
                         <div
                             key={index}
                             className="relative w-[280px] sm:w-[300px] md:w-[350px] bg-white rounded-[40px] p-6 md:p-8 shadow border-[#5E5EEE] border-[3px] flex-shrink-0"

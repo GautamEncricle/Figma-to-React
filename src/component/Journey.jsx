@@ -34,7 +34,7 @@ const Journey = () => {
                     </div>
 
                     {/* Arrow */}
-                    <img src={ArrowGif} alt="arrow" className="h-16 mt-5 hidden md:block" />
+                    <img src={ArrowGif} alt="arrow" className="h-16 mt-3 hidden md:block" />
 
                     {/* Step 2: Add to Cart */}
                     <div className="flex flex-col items-center gap-2 w-[188px]">
@@ -46,7 +46,7 @@ const Journey = () => {
                     </div>
 
                     {/* Arrow */}
-                    <img src={ArrowGif} alt="arrow" className="h-16 mt-5 hidden md:block" />
+                    <img src={ArrowGif} alt="arrow" className="h-16 mt-3 hidden md:block" />
 
                     {/* Step 3: Delivery */}
                     <div className="flex flex-col items-center gap-2 w-[188px]">

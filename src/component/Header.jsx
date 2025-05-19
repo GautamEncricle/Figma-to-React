@@ -61,8 +61,8 @@ const Header = () => {
                         />
                     </div>
                     {/* Floating Rating */}
-                    <div className="absolute bottom-20 left-4 top-1 md:top-auto max-h-[120px] md:left-0 bg-white text-black w-[250px] px-4 py-4 rounded-xl shadow-md space-y-2 z-5 hover:bg-[#dcf8f7]">
-                        <img src={heroRating} alt="rating" className="w-10" />
+                    <div className="absolute bottom-20 left-4 top-1 md:top-auto max-h-[140px] md:left-0 bg-white text-black w-[250px] px-4 py-4 rounded-xl shadow-md space-y-2 z-5 hover:bg-[#dcf8f7]">
+                        <img src={heroRating} alt="rating" className="w-22 h-7" />
                         <p className="font-semibold text-lg">Best Service & 5 Star</p>
                         <p className="text-sm text-gray-700">Advanced technology for seamless integration.</p>
                     </div>

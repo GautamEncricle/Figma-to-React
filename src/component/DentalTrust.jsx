@@ -36,10 +36,10 @@ const DentalTrust = () => {
     }, [scrollDir]);
 
     return (
-        <section className="relative w-full bg-white/90 py-20 px-4 overflow-hidden">
+        <section className="relative w-full md:h-[430px] bg-white/90 py-20 px-4 overflow-hidden">
             {/* Decorative Images */}
             <img src={decorLeft} alt="Decor" className="absolute left-0 top-0 w-[180px] h-[180px]" />
-            <img src={decorRight} alt="Decor" className="absolute right-0 bottom-0 w-[85px] h-[100px]" />
+            <img src={decorRight} alt="Decor" className="absolute right-0 bottom-0 w-[85px] h-[100px] md:h-[120px]" />
 
             {/* Heading */}
             <div className="text-center mx-auto max-w-3xl mb-16">
@@ -49,7 +49,7 @@ const DentalTrust = () => {
             {/* Auto-scrolling stat cards */}
             <div
                 ref={scrollRef}
-                className="flex gap-4 overflow-x-auto scrollbar-hide px-1 scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+                className="flex gap-4 md:min-w-[90vw] md:max-w-[90vw] md:ml-[5vw] overflow-x-auto scrollbar-hide px-1 scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
                 style={{ scrollBehavior: 'smooth' }}
             >
                 {stats.map((stat, idx) => (

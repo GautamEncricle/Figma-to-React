@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import ToothIcon from '../assets/images/vector/tooth.png';
 import SearchIcon from '../assets/images/vector/search.png';
 import CardIcon from '../assets/images/vector/card.png';
@@ -9,6 +9,21 @@ import HeartIcon from '../assets/images/vector/heart.png';
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isProdDropdownOpen, setIsProdDropdownOpen] = useState(false);
+    const hideTimeout = useRef(null);
+
+    const handleMouseEnter = () => {
+        if (hideTimeout.current) {
+            clearTimeout(hideTimeout.current);
+            hideTimeout.current = null;
+        }
+        setIsProdDropdownOpen(true);
+    };
+
+    const handleMouseLeave = () => {
+        hideTimeout.current = setTimeout(() => {
+            setIsProdDropdownOpen(false);
+        }, 300);
+    };
 
     return (
         <>
@@ -22,14 +37,19 @@ const Navbar = () => {
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center font-semibold font-Roboto gap-6">
                     <a href="#home" className="hover:text-blue-600">Home</a>
-                    <div className="relative group">
-                        <button className="hover:text-blue-" onMouseEnter={() => setIsProdDropdownOpen(true)} onMouseLeave={() => setIsProdDropdownOpen(false)}>
+                    <div className="relative group"
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        <button
+                            className="hover:text-blue-"
+                            onClick={() => setIsProdDropdownOpen(prev => !prev)}
+                            type="button"
+                        >
                             Production
                         </button>
                         {isProdDropdownOpen && (
-                            <div className="absolute left-0 mt-2 flex flex-col bg-white text-black shadow-lg rounded-lg z-50 min-w-[150px]"
-                                onMouseEnter={() => setIsProdDropdownOpen(true)}
-                                onMouseLeave={() => setIsProdDropdownOpen(false)}>
+                            <div className="absolute left-0 mt-2 flex flex-col bg-white text-black shadow-lg rounded-lg z-50 min-w-[150px]">
                                 <a href="#painting" className="px-4 py-2 hover:bg-gray-100">Painting</a>
                                 <a href="#plumbing" className="px-4 py-2 hover:bg-gray-100">Plumbing</a>
                             </div>

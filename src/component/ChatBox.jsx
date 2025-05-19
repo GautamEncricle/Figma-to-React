@@ -5,7 +5,7 @@ import ChatIcon from '../assets/images/icons/chat.png';
 const ChatBox = () => {
     return (
         <section className="relative w-full flex justify-center -mb-[135px] z-20 px-4">
-            <div className="w-full md:w-[70vw] md:h-[270px] max-w-[1280px] bg-[#5E5EEE] border-8 border-white rounded-[20px] px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-8 shadow-lg">
+            <div className="w-full md:w-[70vw] md:h-[270px] max-w-[1280px] bg-[#5E5EEE] border-8 border-white rounded-[20px] px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-8 shadow-0">
                 {/* Left Side: Subscribe */}
                 <div className="flex flex-col gap-4 w-full md:max-w-[50%]">
                     <div className="flex flex-col gap-2">
