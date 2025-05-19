@@ -20,7 +20,7 @@ const DentalTrust = () => {
         const container = scrollRef.current;
         if (!container) return;
 
-        const scrollStep = 10;
+        const scrollStep = 15;
         const interval = setInterval(() => {
             container.scrollLeft += scrollStep * scrollDir;
 

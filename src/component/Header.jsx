@@ -52,16 +52,16 @@ const Header = () => {
                 {/* Hero Image Right */}
                 <div className="flex-1 relative flex justify-center items-center">
                     {/* Main Image Container */}
-                    <div className="relative w-[280px] md:w-[360px] h-[400px] md:h-[460px] rounded-[30px] overflow-hidden shadow-lg group bg-gray-200">
+                    <div className="relative w-[300px] md:w-[400px] h-[400px] md:h-[460px] rounded-[30px] overflow-hidden shadow-lg group bg-gray-200">
                         {/* Main Image (hover zoom + rotate) */}
                         <img
                             src={heroImg}
                             alt="hero"
-                            className="w-full h-full object-cover rounded-[30px] transform transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-5"
+                            className="w-full h-full object-cover rounded-[30px] transform transition-transform duration-500 group-hover:scale-120 group-hover:-rotate-12"
                         />
                     </div>
                     {/* Floating Rating */}
-                    <div className="absolute bottom-20 left-4 top-1 md:top-auto max-h-[120px] md:left-0 bg-white text-black w-[250px] px-4 py-4 rounded-xl shadow-md space-y-2 z-5 hover:bg-green-100">
+                    <div className="absolute bottom-20 left-4 top-1 md:top-auto max-h-[120px] md:left-0 bg-white text-black w-[250px] px-4 py-4 rounded-xl shadow-md space-y-2 z-5 hover:bg-[#dcf8f7]">
                         <img src={heroRating} alt="rating" className="w-10" />
                         <p className="font-semibold text-lg">Best Service & 5 Star</p>
                         <p className="text-sm text-gray-700">Advanced technology for seamless integration.</p>
