@@ -25,6 +25,10 @@ const Header = () => {
                     <p className="text-lg text-gray-200 max-w-xl">
                         Elevate your practice with premium implants engineered for strength, aesthetics, and seamless integration.
                     </p>
+
+                    {/* Divider */}
+                    <div className='w-full h-[1px] bg-gray-700'></div>
+                    {/* Divider-end */}
                     <div className="flex gap-6">
                         <div>
                             <p className="text-3xl font-bold">99%</p>
@@ -39,27 +43,35 @@ const Header = () => {
                             <p className="text-sm text-gray-300">Durability</p>
                         </div>
                     </div>
+                    {/* Divider */}
+                    <div className='w-full h-[1px] bg-gray-700'></div>
+                    {/* Divider-end */}
                     <img src={introShop} alt="shop" className="h-10" />
                 </div>
 
                 {/* Hero Image Right */}
-                <div className="flex-1 relative flex justify-center">
+                <div className="flex-1 relative flex justify-center items-center">
+                    {/* Main Image Container */}
+                    <div className="relative w-[280px] md:w-[360px] h-[400px] md:h-[460px] rounded-[30px] overflow-hidden shadow-lg group bg-gray-200">
+                        {/* Main Image (hover zoom + rotate) */}
+                        <img
+                            src={heroImg}
+                            alt="hero"
+                            className="w-full h-full object-cover rounded-[30px] transform transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-5"
+                        />
+                    </div>
                     {/* Floating Rating */}
-                    <div className="absolute top-6 left-6 sm:top-10 sm:left-10 bg-white text-black w-[260px] px-4 py-4 rounded-xl shadow-md space-y-2 z-10">
+                    <div className="absolute bottom-20 left-4 top-1 md:top-auto max-h-[120px] md:left-0 bg-white text-black w-[250px] px-4 py-4 rounded-xl shadow-md space-y-2 z-10 hover:bg-green-100">
                         <img src={heroRating} alt="rating" className="w-10" />
                         <p className="font-semibold text-lg">Best Service & 5 Star</p>
                         <p className="text-sm text-gray-700">Advanced technology for seamless integration.</p>
                     </div>
-
-                    {/* Main Image */}
-                    <div className="w-[280px] md:w-[340px] h-[360px] rounded-[30px] overflow-hidden shadow-lg hover:scale-105 hover:-rotate-1 transition-transform duration-500">
-                        <img src={heroImg} alt="hero" className="w-full h-full object-cover rounded-[30px]" />
-                    </div>
                 </div>
+
             </div>
 
             {/* Contact Info Floating */}
-            <div className="absolute left-1/2 bottom-[-60px] transform -translate-x-1/2 w-[90vw] md:w-[80vw] lg:w-[70vw] bg-white text-black rounded-2xl shadow-xl px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-6 z-50">
+            <div className="absolute left-1/2 bottom-[-120px] md:bottom-[-50px] transform -translate-x-1/2 w-[90vw] md:w-[80vw] lg:w-[70vw] bg-white text-black rounded-2xl shadow-xl px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-6 z-50">
                 {/* Contact */}
                 <div className="flex items-center gap-4">
                     <img src={contactIcon} alt="contact" className="w-8 h-8" />
