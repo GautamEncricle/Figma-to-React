@@ -50,8 +50,8 @@ const Navbar = () => {
                         </button>
                         {isProdDropdownOpen && (
                             <div className="absolute left-0 mt-2 flex flex-col bg-white text-black shadow-lg rounded-lg z-50 min-w-[150px]">
-                                <a href="#painting" className="px-4 py-2 hover:bg-gray-100">Painting</a>
-                                <a href="#plumbing" className="px-4 py-2 hover:bg-gray-100">Plumbing</a>
+                                <a href="#Process" className="px-4 py-2 hover:bg-gray-100">Process</a>
+                                <a href="#Quality" className="px-4 py-2 hover:bg-gray-100">Quality</a>
                             </div>
                         )}
                     </div>

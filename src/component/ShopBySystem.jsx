@@ -37,8 +37,8 @@ const products = [
 const ShopBySystem = () => {
   const scrollRef = useRef(null);
 
-  const scrollLeft = () => scrollRef.current.scrollBy({ left: -250, behavior: 'smooth' });
-  const scrollRight = () => scrollRef.current.scrollBy({ left: 250, behavior: 'smooth' });
+  const scrollLeft = () => scrollRef.current.scrollBy({ left: -260, behavior: 'smooth' });
+  const scrollRight = () => scrollRef.current.scrollBy({ left: 260, behavior: 'smooth' });
 
   return (
     <section className="bg-gradient-to-b from-[#F8F8FF] to-white py-12 mt-[140px] overflow-x-hidden">

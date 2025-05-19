@@ -40,11 +40,11 @@ const ShopByCase = () => {
     const scrollRef = useRef(null);
 
     const scrollLeft = () => {
-        scrollRef.current.scrollBy({ left: -250, behavior: 'smooth' });
+        scrollRef.current.scrollBy({ left: -260, behavior: 'smooth' });
     };
 
     const scrollRight = () => {
-        scrollRef.current.scrollBy({ left: 250, behavior: 'smooth' });
+        scrollRef.current.scrollBy({ left: 260, behavior: 'smooth' });
     };
 
     return (
