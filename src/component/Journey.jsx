@@ -12,7 +12,6 @@ const Journey = () => {
             <div className="absolute left-0 top-[60%] w-[120px] h-[120px] bg-[#5E5EEE] rotate-[18.4deg] rounded-[40px] opacity-90 z-0"></div>
             <div className="absolute right-0 top-[30%] w-[100px] h-[100px] border border-[#5E5EEE] rotate-[-161.6deg] opacity-20 bg-blue-500 z-0"></div>
 
-            {/* Main Content */}
             <div className="z-10 flex flex-col items-center text-center gap-10 max-w-[1057px]">
                 {/* Title */}
                 <div className="flex flex-col items-center gap-4">

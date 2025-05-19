@@ -15,7 +15,7 @@ const Header = () => {
             <div className="max-w-[1320px] mx-auto px-4 pt-16 pb-[160px] flex flex-col md:flex-row items-center justify-between gap-12">
                 {/* Text Left */}
                 <div className="flex-1 space-y-6">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-sans leading-tight">
                         Superior Dental{' '}
                         <img src={introText1} alt="text1" className="inline h-8 md:h-10 mx-1" />
                         Implants Unmatched Precision{' '}

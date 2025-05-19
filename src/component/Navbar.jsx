@@ -15,12 +15,12 @@ const Navbar = () => {
             {/* Top Navbar */}
             <nav className="w-full h-14 bg-indigo-50 flex justify-between items-center px-4 md:px-8 sticky top-0 z-50">
                 {/* Logo */}
-                <div className="text-xl font-semibold font-sans text-blue-950 whitespace-nowrap">
+                <div className="text-xl font-Lato font-[600] font-sans text-[#124767] whitespace-nowrap">
                     Dentallmplants.com
                 </div>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex items-center font-semibold font-sans gap-6">
+                <div className="hidden md:flex items-center font-semibold font-Roboto gap-6">
                     <a href="#home" className="hover:text-blue-600">Home</a>
                     <div className="relative group">
                         <button className="hover:text-blue-" onMouseEnter={() => setIsProdDropdownOpen(true)} onMouseLeave={() => setIsProdDropdownOpen(false)}>
@@ -72,7 +72,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden bg-white shadow-lg w-3/4 fixed top-14 right-0 h-[calc(100vh-3.5rem)] p-5 z-50 overflow-y-auto">
+                <div className="md:hidden bg-white shadow-lg w-3/4 fixed top-14 right-0 h-[calc(100vh-3.5rem)] p-5 z-50 overflow-scroll">
                     <nav className="flex flex-col gap-4">
                         <a href="#home" className="text-gray-800 font-semibold">Home</a>
                         <div className="relative">
