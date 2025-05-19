@@ -37,8 +37,8 @@ const products = [
 const ShopBySystem = () => {
   const scrollRef = useRef(null);
 
-  const scrollLeft = () => scrollRef.current.scrollBy({ left: -350, behavior: 'smooth' });
-  const scrollRight = () => scrollRef.current.scrollBy({ left: 350, behavior: 'smooth' });
+  const scrollLeft = () => scrollRef.current.scrollBy({ left: -250, behavior: 'smooth' });
+  const scrollRight = () => scrollRef.current.scrollBy({ left: 250, behavior: 'smooth' });
 
   return (
     <section className="bg-gradient-to-b from-[#F8F8FF] to-white py-12 mt-[140px] overflow-x-hidden">
@@ -66,64 +66,66 @@ const ShopBySystem = () => {
           {/* Left Arrow */}
           <button
             onClick={scrollLeft}
-            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-[#f0f0ff] hover:bg-[#5E5EEE] transition flex items-center justify-center shadow"
+            className="absolute left-0 md:left-[100px] top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-[#f0f0ff] hover:bg-[#5E5EEE] transition flex items-center justify-center shadow"
           >
             <img src={ArrowIcon} alt="left" className="w-4 h-4 rotate-180" />
           </button>
 
           {/* Product Cards */}
-          <div
-            ref={scrollRef}
-            className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 pl-6 pr-2 scrollbar-hide justify-center"
-          >
-            {products.map((product) => (
-              <div
-                key={product.id}
-                className="min-w-[320px] max-w-[320px] bg-white rounded-[24px] shadow-lg p-5 flex flex-col justify-between relative snap-start"
-              >
-                {/* Badge */}
-                {product.badge && (
-                  <span className="absolute top-4 left-4 bg-[#5E5EEE] text-white px-3 py-1 text-xs font-semibold rounded-tl-[12px] rounded-br-[12px]">
-                    {product.badge}
-                  </span>
-                )}
+          <div className="w-full overflow-hidden">
+            <div
+              ref={scrollRef}
+              className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 scrollbar-hide w-[80vw] mx-auto md:w-[calc(100%-48px)] md:justify-center"
+            >
+              {products.map((product) => (
+                <div
+                  key={product.id}
+                  className="flex-shrink-0 w-[calc(80vw-24px)] md:w-[320px] bg-white rounded-[24px] shadow-lg p-5 flex flex-col justify-between relative snap-start"
+                >
+                  {/* Badge */}
+                  {product.badge && (
+                    <span className="absolute top-4 left-4 bg-[#5E5EEE] text-white px-3 py-1 text-xs font-semibold rounded-tl-[12px] rounded-br-[12px]">
+                      {product.badge}
+                    </span>
+                  )}
 
-                {/* Stars */}
-                <img src={Stars} alt="Stars" className="absolute top-4 right-4 w-[100px]" />
+                  {/* Stars */}
+                  <img src={Stars} alt="Stars" className="absolute top-4 right-4 w-[100px]" />
 
-                {/* Image */}
-                <div className="h-[180px] flex items-center justify-center mt-10 mb-6">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="max-h-[160px] object-contain"
-                  />
-                </div>
+                  {/* Image */}
+                  <div className="h-[180px] flex items-center justify-center mt-10 mb-6">
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                      className="max-h-[160px] object-contain"
+                    />
+                  </div>
 
-                {/* Text Info */}
-                <div className="text-left space-y-1 mb-4">
-                  <h3 className="text-[18px] font-semibold">{product.title}</h3>
-                  <p className="text-[14px] text-gray-500">{product.subtitle}</p>
-                </div>
+                  {/* Text Info */}
+                  <div className="text-left space-y-1 mb-4">
+                    <h3 className="text-[18px] font-semibold">{product.title}</h3>
+                    <p className="text-[14px] text-gray-500">{product.subtitle}</p>
+                  </div>
 
-                {/* Actions */}
-                <div className="flex items-center justify-between">
-                  <button className="flex items-center gap-2 bg-[#5E5EEE] text-white px-4 py-2 rounded-full text-sm hover:bg-[#4343cc] transition">
-                    <img src={ViewDetailsIcon} alt="View" className="w-4 h-4" />
-                    View Details
-                  </button>
-                  <div className="w-[36px] h-[36px] rounded-full bg-[#E9E9FF] flex items-center justify-center">
-                    <img src={HeartIcon} alt="Heart" className="w-4 h-4" />
+                  {/* Actions */}
+                  <div className="flex items-center justify-between">
+                    <button className="flex items-center gap-2 bg-[#5E5EEE] text-white px-4 py-2 rounded-full text-sm hover:bg-[#4343cc] transition">
+                      <img src={ViewDetailsIcon} alt="View" className="w-4 h-4" />
+                      View Details
+                    </button>
+                    <div className="w-[36px] h-[36px] rounded-full bg-[#E9E9FF] flex items-center justify-center">
+                      <img src={HeartIcon} alt="Heart" className="w-4 h-4" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Right Arrow */}
           <button
             onClick={scrollRight}
-            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-[#5E5EEE] hover:bg-[#4343cc] transition flex items-center justify-center shadow"
+            className="absolute right-0 md:right-[100px] top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-[#5E5EEE] hover:bg-[#4343cc] transition flex items-center justify-center shadow"
           >
             <img src={ArrowIcon} alt="right" className="w-4 h-4" />
           </button>
