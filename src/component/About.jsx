@@ -18,7 +18,7 @@ const AboutUs = () => {
                     />
 
                     {/* Floating Overlay Image */}
-                    <div className="absolute bottom-0 right-[-4px] sm:right-[-2px] w-[140px] h-[140px] sm:w-[200px] sm:h-[200px] z-20 border-t-8 border-r-8 border-[#F8F8FF] bg-white rounded-[30px] rounded-bl-[2px] group p-2 sm:p-3 overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105">
+                    <div className="absolute bottom-0 right-[-10px]  sm:right-[-10px] w-[140px] h-[140px] sm:w-[200px] sm:h-[200px] z-20 border-t-8 border-r-8 border-[#F8F8FF] bg-white rounded-[30px] rounded-bl-[2px] rounded-tr-[2px] group p-2 sm:p-3 overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105">
                         <img
                             src={About2}
                             alt="Overlay"
