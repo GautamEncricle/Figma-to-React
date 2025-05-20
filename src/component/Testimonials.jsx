@@ -57,7 +57,7 @@ const Testimonials = () => {
             <div className="max-w-[1120px] mx-auto relative">
                 <div
                     ref={scrollRef}
-                    className="flex overflow-x-auto gap-6 px-4 py-6 scrollbar-hide scroll-smooth"
+                    className="flex overflow-x-auto gap-6 px-4 py-6 scrollbar-hide scroll-smooth [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
                 >
                     {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
                         <div
@@ -73,7 +73,7 @@ const Testimonials = () => {
                             <img src={StarImg} alt="rating" className="h-7 mb-4" />
 
                             {/* Review */}
-                            <p className="text-black text-sm my-5">
+                            <p className="text-gray-400 text-sm my-5">
                                 I've been using Dentallmplants implants for over five years. The precision and quality are unmatched,
                                 leading to exceptional results for my patients!
                             </p>
@@ -81,7 +81,7 @@ const Testimonials = () => {
                             {/* Profile */}
                             <div className="flex items-center gap-3">
                                 <img src={ProfileImg} alt="profile" className="h-10 w-10 rounded-full object-cover" />
-                                <p className="font-semibold text-black">Dr. John Smith, DDS</p>
+                                <p className="font-medium text-black">Dr. John Smith, DDS</p>
                             </div>
                         </div>
                     ))}

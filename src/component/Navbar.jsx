@@ -28,7 +28,7 @@ const Navbar = () => {
     return (
         <>
             {/* Top Navbar */}
-            <nav className="w-full h-14 bg-white flex justify-between items-center px-4 md:px-8 sticky top-0 z-50">
+            <nav className="w-full h-20 bg-white flex justify-between items-center px-4 md:px-8 sticky top-0 z-50">
                 {/* Logo */}
                 <div className="text-xl font-Lato font-[600] font-sans text-[#124767] whitespace-nowrap">
                     Dentallmplants.com

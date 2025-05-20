@@ -24,13 +24,13 @@ const DentalTrust = () => {
         const interval = setInterval(() => {
             container.scrollLeft += scrollStep * scrollDir;
 
-            // Reverse at boundaries
-            if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
+            // Reverse at boundaries with tolerance
+            if (container.scrollLeft + container.offsetWidth >= container.scrollWidth - 2) {
                 setScrollDir(-1);
-            } else if (container.scrollLeft <= 0) {
+            } else if (container.scrollLeft <= 2) {
                 setScrollDir(1);
             }
-        }, 16);
+        }, 20);
 
         return () => clearInterval(interval);
     }, [scrollDir]);
@@ -49,16 +49,16 @@ const DentalTrust = () => {
             {/* Auto-scrolling stat cards */}
             <div
                 ref={scrollRef}
-                className="flex gap-4 md:min-w-[90vw] md:max-w-[90vw] md:ml-[5vw] overflow-x-auto scrollbar-hide px-1 scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+                className="flex gap-4 md:min-w-[88vw] md:max-w-[88vw] md:ml-[6vw] overflow-x-auto scrollbar-hide px-1 scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
                 style={{ scrollBehavior: 'smooth' }}
             >
                 {stats.map((stat, idx) => (
                     <div
                         key={idx}
-                        className="min-w-[220px] bg-white border border-[#C6C6C6] rounded-2xl px-5 py-4 flex-shrink-0 flex flex-col items-center gap-3"
+                        className="max-w-[210px] min-w-[210px] max-h-[109px] md:mt-1 bg-white border border-[#C6C6C6] rounded-2xl px-5 py-4 flex-shrink-0 flex flex-col items-center gap-3"
                     >
                         <h3 className="text-4xl font-semibold text-black leading-tight">{stat.number}</h3>
-                        <p className="text-xl font-medium text-[#102693]">{stat.label}</p>
+                        <p className="text-xl flex font-semibold text-[#102693]">{stat.label}</p>
                     </div>
                 ))}
             </div>

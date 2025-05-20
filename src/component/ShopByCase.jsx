@@ -52,17 +52,17 @@ const ShopByCase = () => {
             <div className="max-w-[1100px] mx-auto">
                 {/* Title Section */}
                 <div className="shopSystemTitle flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
-                    <div className="flex flex-col gap-4 w-full md:w-1/2">
+                    <div className="flex flex-col gap-4 w-full md:w-1/2 md:ml-10">
                         <div className="title flex items-center gap-2">
                             <img src={TitleIcon} alt="title" className="h-5" />
                             <p className="text-xs font-bold text-blue-700">Shop By Case</p>
                         </div>
-                        <h2 className="text-2xl md:text-2xl font-bold">
+                        <h2 className="text-2xl md:text-[35px] font-bold">
                             Case-Specific Solutions for Perfect Restorations
                         </h2>
                     </div>
 
-                    <div className="seeMore flex items-center gap-2 bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-800 transition-colors w-full md:w-auto justify-center">
+                    <div className="seeMore flex items-center gap-2 bg-[#5E5EEE]  text-white text-[16px] px-4 py-2 rounded-full shadow-md hover:bg-[#4343cc] transition-colors w-full md:w-auto md:mr-8 md:mt-22 justify-center">
                         <img src={ShopIcon} alt="shop" className="h-5" />
                         <a href="#" className="font-semibold">See More</a>
                     </div>

@@ -14,7 +14,7 @@ const Header = () => {
             {/* Main Content */}
             <div className="max-w-[1320px] mx-auto px-4 pt-16 pb-[160px] flex flex-col md:flex-row items-center justify-between gap-12">
                 {/* Text Left */}
-                <div className="flex-1 space-y-6">
+                <div className="flex-1 space-y-6 lg:max-w-[700px] lg:min-w-[700px]">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-sans leading-tight">
                         Superior Dental{' '}
                         <img src={introText1} alt="text1" className="inline h-8 md:h-10 mx-1" />
@@ -22,12 +22,12 @@ const Header = () => {
                         <img src={introText2} alt="text2" className="inline h-8 md:h-10 mx-1" />
                         Longevity
                     </h1>
-                    <p className="text-lg text-gray-200 max-w-xl">
+                    <p className="text-lg text-gray-200 max-w-xl lg:max-w-3xl">
                         Elevate your practice with premium implants engineered for strength, aesthetics, and seamless integration.
                     </p>
 
                     {/* Divider */}
-                    <div className='w-full h-[1px] bg-gray-700'></div>
+                    <div className='w-full md:w-[90%] h-[1px] bg-gray-700'></div>
                     {/* Divider-end */}
                     <div className="flex gap-6">
                         <div>
@@ -44,15 +44,15 @@ const Header = () => {
                         </div>
                     </div>
                     {/* Divider */}
-                    <div className='w-full h-[1px] bg-gray-700'></div>
+                    <div className='w-full md:w-[90%] h-[1px] bg-gray-700'></div>
                     {/* Divider-end */}
                     <img src={introShop} alt="shop" className="h-10" />
                 </div>
 
                 {/* Hero Image Right */}
-                <div className="flex-1 relative flex justify-center items-center">
+                <div className="flex-1 relative flex justify-center lg:mr-12">
                     {/* Main Image Container */}
-                    <div className="relative w-[300px] md:w-[400px] h-[400px] md:h-[460px] rounded-[30px] overflow-hidden shadow-lg group bg-gray-200">
+                    <div className="relative w-[300px] md:w-[400px] h-[400px] md:h-[460px] lg:left-15 lg:mt-10 rounded-[30px] overflow-hidden shadow-lg group bg-gray-200">
                         {/* Main Image (hover zoom + rotate) */}
                         <img
                             src={heroImg}
@@ -61,7 +61,7 @@ const Header = () => {
                         />
                     </div>
                     {/* Floating Rating */}
-                    <div className="absolute bottom-20 left-4 top-1 md:top-auto max-h-[140px] md:left-0 bg-white text-black w-[250px] px-4 py-4 rounded-xl shadow-md space-y-2 z-5 hover:bg-[#dcf8f7]">
+                    <div className="absolute bottom-20 left-3 md:-left-10 top-1 md:top-auto max-h-[144px] md:mb-10 bg-white text-black w-[275px] px-4 py-4 rounded-xl shadow-md space-y-1 z-5 hover:bg-[#dcf8f7]">
                         <img src={heroRating} alt="rating" className="w-22 h-7" />
                         <p className="font-semibold text-lg">Best Service & 5 Star</p>
                         <p className="text-sm text-gray-700">Advanced technology for seamless integration.</p>
