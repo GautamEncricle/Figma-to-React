@@ -73,7 +73,7 @@ const Header = () => {
             {/* Contact Info Floating */}
             <div className="absolute left-1/2 bottom-[-120px] md:bottom-[-50px] transform -translate-x-1/2 w-[90vw] md:w-[80vw] lg:w-[70vw] bg-white text-black rounded-2xl shadow-xl px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-6 z-10">
                 {/* Contact */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3">
                     <img src={contactIcon} alt="contact" className="w-8 h-8" />
                     <div>
                         <p className="font-semibold">Need Help With Your Order?</p>
@@ -85,7 +85,7 @@ const Header = () => {
 
                 {/* Shipping */}
                 <div className="flex items-center gap-4">
-                    <img src={watchIcon} alt="shipping" className="w-8 h-8" />
+                    <img src={watchIcon} alt="shipping" className="w-9 h-8" />
                     <div>
                         <p className="font-semibold">Shipping Time</p>
                         <p className="text-sm">Standard: 3–5 Days • Express: 1–2 Days</p>

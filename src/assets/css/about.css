@@ -36,7 +36,7 @@
 
 /* ==========================
      Shine Wrapper Styling
-  ========================== */
+========================== */
 
 .shine-wrapper-about1 {
     position: relative;
@@ -64,15 +64,15 @@
     box-shadow: none;
 }
 
-/* On hover: start shine animation */
-.shine-wrapper-about1:hover::before {
+/* ON MOUSEOUT (previously hover): start shine animation */
+.shine-wrapper-about1.mouseout::before {
     opacity: 0.3;
     transform: rotate(-45deg) translateY(100%);
     transition: all 1.4s ease;
 }
 
-/* On mouseout: reverse shine animation */
-.shine-wrapper-about1.mouseout::before {
+/* ON HOVER (previously mouseout): reset shine */
+.shine-wrapper-about1:hover::before {
     opacity: 0;
     transform: rotate(-45deg);
     transition: all 1.4s ease;
